@@ -1,0 +1,21 @@
+body {
+  background-color: black;
+  padding: 6em 0;
+}
+
+.player {
+  text-align: center;
+  background-color: white;
+}
+
+.score {
+  font-size: 72pt;
+}
+
+.buttons {
+  margin-bottom: 2em;
+}
+
+.disabled {
+  background-color: #777;
+}
