@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Quiz scorer</title>
+    <title>Scoreboard</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/app.css" rel="stylesheet">
+    <link href="css/scoreboard.css" rel="stylesheet">
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -15,42 +15,42 @@
   <body>
     <div class="container-fluid">
       <div class="row players">
-        <div class="player col-sm-3">
+        <div id="player-1" class="player col-sm-3">
           <h2 class="name">Player one</h2>
-          <div class="score">0</div>
+          <div id="score-2" class="score">0</div>
           <div class="buttons btn-group" role="group">
-            <button type="button" class="btn btn-success"><i class="glyphicon glyphicon-plus"></i></button>
-            <button type="button" class="btn btn-danger"><i class="glyphicon glyphicon-minus"></i></button>
+            <button type="button" data-index="1" class="btn btn-success plus"><i class="glyphicon glyphicon-plus"></i></button>
+            <button type="button" data-index="1" class="btn btn-danger minus"><i class="glyphicon glyphicon-minus"></i></button>
           </div>
         </div>
-        <div class="player col-sm-3">
+        <div id="player-2" class="player col-sm-3">
           <h2 class="name">Player two</h2>
-          <div class="score">0</div>
+          <div id="score-3" class="score">0</div>
           <div class="buttons btn-group" role="group">
-            <button type="button" class="btn btn-success"><i class="glyphicon glyphicon-plus"></i></button>
-            <button type="button" class="btn btn-danger"><i class="glyphicon glyphicon-minus"></i></button>
+            <button type="button" data-index="2" class="btn btn-success plus"><i class="glyphicon glyphicon-plus"></i></button>
+            <button type="button" data-index="2" class="btn btn-danger minus"><i class="glyphicon glyphicon-minus"></i></button>
           </div>
         </div>
-        <div class="player col-sm-3">
+        <div id="player-3" class="player col-sm-3">
           <h2 class="name">Player three</h2>
-          <div class="score">0</div>
+          <div id="score-4" class="score">0</div>
           <div class="buttons btn-group" role="group">
-            <button type="button" class="btn btn-success"><i class="glyphicon glyphicon-plus"></i></button>
-            <button type="button" class="btn btn-danger"><i class="glyphicon glyphicon-minus"></i></button>
+            <button type="button" data-index="3" class="btn btn-success plus"><i class="glyphicon glyphicon-plus"></i></button>
+            <button type="button" data-index="3" class="btn btn-danger minus"><i class="glyphicon glyphicon-minus"></i></button>
           </div>
         </div>
-        <div class="player col-sm-3">
+        <div id="player-4" class="player col-sm-3">
           <h2 class="name">Player four</h2>
-          <div class="score">0</div>
+          <div id="score-1" class="score">0</div>
           <div class="buttons btn-group" role="group">
-            <button type="button" class="btn btn-success"><i class="glyphicon glyphicon-plus"></i></button>
-            <button type="button" class="btn btn-danger"><i class="glyphicon glyphicon-minus"></i></button>
+            <button type="button" data-index="4" class="btn btn-success plus"><i class="glyphicon glyphicon-plus"></i></button>
+            <button type="button" data-index="4" class="btn btn-danger minus"><i class="glyphicon glyphicon-minus"></i></button>
           </div>
         </div>
       </div>
     </div>
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/scoreboard.js"></script>
   </body>
 </html>
