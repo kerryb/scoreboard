@@ -5,6 +5,8 @@ Scoreboard = (function() {
   _this.bind = function() {
     $(document).bind("keypress", Scoreboard.keypress);
     $(document).bind("buzz", Scoreboard.buzz);
+    $(".plus").bind("click", Scoreboard.addPoint);
+    $(".minus").bind("click", Scoreboard.subtractPoint);
   };
 
   _this.keypress = function(event) {
@@ -20,6 +22,21 @@ Scoreboard = (function() {
       lock(data.player);
     }
   };
+
+  _this.addPoint = function() {
+    adjustScore($(this).data("index"), 1);
+    unlock();
+  };
+
+  _this.subtractPoint = function() {
+    adjustScore($(this).data("index"), -1);
+    unlock();
+  };
+
+  function adjustScore(player, amount) {
+    score = $("#score-" + player);
+    score.text(parseInt(score.text()) + amount);
+  }
 
   function lock(player) {
     locked = true;
