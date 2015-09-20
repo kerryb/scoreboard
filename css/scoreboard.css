@@ -38,3 +38,15 @@ body {
 .disabled {
   background-color: #777;
 }
+
+#footer {
+  color: #333;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 0.5em;
+}
+
+#footer a, #footer a:visited {
+  color: #555;
+}
