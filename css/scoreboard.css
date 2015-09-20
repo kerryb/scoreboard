@@ -47,6 +47,18 @@ body {
   bottom: 0.5em;
 }
 
+#help {
+  position: fixed;
+  top: 0.5em;
+  right: 0.5em;
+}
+
+#help a, #help a:visited {
+  color: white;
+  font-size: 18pt;
+  outline: none;
+}
+
 #footer a, #footer a:visited {
   color: #555;
 }

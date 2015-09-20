@@ -21,6 +21,40 @@
         <button id="continue" class="btn btn-lg btn-default" hidden="true">Continue</button>
       </div>
     </div>
+
+    <div id="help">
+      <a href="#" data-toggle="modal" data-target="#help-modal"><i class="glyphicon glyphicon-question-sign"></i></a>
+    </div>
+    <div id="help-modal" class="modal fade">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Scoreboard help</h4>
+          </div>
+          <div class="modal-body">
+            <h3>General</h3>
+            <p>A modern browser is recommended, running fullscreen.</p>
+            <h3>Player controls</h3>
+            <p>The scoreboard is intended to be used with external buttons, like a PS2 Buzz! controller (which can be
+              <a href="http://www.ebay.co.uk/sch/i.html?&_nkw=ps2+buzz+controller">picked up cheaply on eBay</a>).</p>
+            <p>Players buzz in by pressing buttons mapped to 1, 2, 3 or 4 on the keyboard.
+              The corresponding button numbers on the Buzz! controllers are 0, 5, 10 and 15 &ndash;
+              these can be mapped using software like
+              <a href="https://itunes.apple.com/gb/app/joystick-mapper/id528183797?mt=12">Joystick Mapper</a>,
+              <a href="https://vividmachine.com/controllers/">Controllers</a> or
+              <a href="https://github.com/fyhuang/enjoy2">Enjoy2</a> on a Mac, or equivalents on Windows or Linux.</p>
+            <h3>Quizmaster controls</h3>
+            <ul>
+              <li>Click on a player name to edit.</li>
+              <li>Add and remove points using the red and green buttons.</li>
+              <li>Unlock the players' buzzers by either adding or removing a point, hitting &lsquo;Continue&rsquo; or pressing the space bar.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div id="footer">
       By <a href="https://github.com/kerryb/scoreboard">kerryb</a>
     </div>
