@@ -1,6 +1,7 @@
 var Scoreboard = (function() {
   var _this = {};
   var locked = false;
+  var buzzer = new Audio("media/buzz.wav");
 
   _this.init = function() {
     hide_continue_button();
@@ -25,6 +26,7 @@ var Scoreboard = (function() {
   _this.buzz = function(event, data) {
     if (!locked) {
       lock(data.player);
+      buzzer.play();
     }
   };
 
