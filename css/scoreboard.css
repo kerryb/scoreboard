@@ -13,8 +13,22 @@ body {
   border-right: 1px solid black;
 }
 
+.name {
+  height: 2.5em;
+  overflow: hidden;
+}
+
+.name.editable-click {
+  border-bottom: none;
+}
+
+.name.editable-click:hover {
+  border-bottom: dashed 1px #0088cc;
+}
+
 .score {
   font-size: 72pt;
+  margin-bottom: 0.5em;
 }
 
 .buttons {

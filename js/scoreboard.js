@@ -7,6 +7,7 @@ var Scoreboard = (function() {
     $.each([1, 2, 3, 4], function(_index, player) {
       $($.templates("#playerTemplate").render({player: player})).appendTo("#players");
     });
+    $(".name").editable();
     hide_continue_button();
   };
 
