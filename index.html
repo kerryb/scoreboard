@@ -71,6 +71,7 @@
               <li>Unlock the players' buzzers by either adding or removing a point, hitting &lsquo;Continue&rsquo; or pressing the space bar.</li>
               <li>Reset all scores using the trash icon in the top left corner.</li>
             </ul>
+            <p>Player names and scores are saved in local storage, so will be retained if you reload the page in the same browser.</p>
           </div>
         </div>
       </div>
@@ -82,8 +83,8 @@
 
     <script id="playerTemplate" type="text/html">
       <div id="player-{{:player}}" class="player col-sm-3">
-        <h2 class="name">Player {{:player}}</h2>
-        <div id="score-{{:player}}" class="score">0</div>
+        <h2 class="name"></h2>
+        <div id="score-{{:player}}" class="score"></div>
         <div class="buttons btn-group" role="group">
           <button type="button" data-index="{{:player}}" class="btn btn-lg btn-success plus"><i class="glyphicon glyphicon-plus"></i></button>
           <button type="button" data-index="{{:player}}" class="btn btn-lg btn-danger minus"><i class="glyphicon glyphicon-minus"></i></button>

@@ -18,6 +18,10 @@ body {
   overflow: hidden;
 }
 
+.name.editable-unsaved {
+  font-weight: 500;
+}
+
 .name.editable-click {
   border-bottom: none;
 }
