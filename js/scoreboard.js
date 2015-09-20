@@ -14,6 +14,7 @@ var Scoreboard = (function() {
   _this.bind = function() {
     $(document).bind("keypress", Scoreboard.keypress);
     $(document).bind("buzz", Scoreboard.buzz);
+    $("#reset-button").bind("click", Scoreboard.reset);
     $(".plus").bind("click", Scoreboard.addPoint);
     $(".minus").bind("click", Scoreboard.subtractPoint);
     $("#continue").bind("click", Scoreboard.unlock);
@@ -32,6 +33,10 @@ var Scoreboard = (function() {
       lock(data.player);
       buzzer.play();
     }
+  };
+
+  _this.reset = function() {
+    $(".score").text(0);
   };
 
   _this.addPoint = function() {

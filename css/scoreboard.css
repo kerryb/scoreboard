@@ -47,14 +47,20 @@ body {
   bottom: 0.5em;
 }
 
+#reset {
+  position: fixed;
+  top: 0.5em;
+  left: 0.5em;
+}
+
 #help {
   position: fixed;
   top: 0.5em;
   right: 0.5em;
 }
 
-#help a, #help a:visited {
-  color: white;
+#help a, #help a:visited, #reset a, #reset a:visited {
+  color: #555;
   font-size: 18pt;
   outline: none;
 }
