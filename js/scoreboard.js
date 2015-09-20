@@ -31,11 +31,13 @@ var Scoreboard = (function() {
   };
 
   _this.addPoint = function() {
+    this.blur();
     adjustScore($(this).data("index"), 1);
     Scoreboard.unlock();
   };
 
   _this.subtractPoint = function() {
+    this.blur();
     adjustScore($(this).data("index"), -1);
     Scoreboard.unlock();
   };
