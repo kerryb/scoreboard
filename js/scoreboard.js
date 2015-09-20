@@ -4,8 +4,11 @@ var Scoreboard = (function() {
   var buzzer = new Audio("media/buzz.wav");
 
   _this.init = function() {
+    $.each([1, 2, 3, 4], function(_index, player) {
+      $($.templates("#playerTemplate").render({player: player})).appendTo("#players");
+    });
     hide_continue_button();
-  }
+  };
 
   _this.bind = function() {
     $(document).bind("keypress", Scoreboard.keypress);
